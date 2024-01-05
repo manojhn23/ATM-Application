@@ -1,0 +1,203 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+body {
+    margin: 0;
+    padding-top: 56px; /* Adjust this value based on your navbar height */
+    background-image: url('atm.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(6px);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.containera {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 60px;
+    margin-top: 20px; /* Adjust this value based on the desired space between navbar and content */
+}
+
+
+
+.containera .card-container{
+    margin-bottom: -150px;
+    position: relative;
+    height: 250px;
+    width: 400px;
+}
+
+.containera .card-container .front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0; left: 0;
+    background:linear-gradient(45deg, blueviolet, deeppink);
+    border-radius: 5px;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    padding:20px;
+    transform:perspective(1000px) rotateY(0deg);
+    transition:transform .4s ease-out;
+    margin-top: 10px;
+}
+
+.containera .card-container .front .image{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.containera .card-container .front .image img{
+    height: 50px;
+}
+
+.containera .card-container .front .card-number-box{
+    padding:30px 0;
+    font-size: 22px;
+    color:#fff;
+}
+
+.containera .card-container .front .flexbox{
+    display: flex;
+}
+
+.containera .card-container .front .flexbox .box:nth-child(1){
+    margin-right: auto;
+}
+
+.containera .card-container .front .flexbox .box{
+    font-size: 15px;
+    color:#fff;
+}
+
+.containera .card-container .back{
+    position: absolute;
+    top:0; left: 0;
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(45deg, blueviolet, deeppink);
+    border-radius: 5px;
+    padding: 20px 0;
+    text-align: right;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    transform:perspective(1000px) rotateY(180deg);
+    transition:transform .4s ease-out;
+}
+
+.containera .card-container .back .stripe{
+    background: #000;
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+}
+
+.containera .card-container .back .box{
+    padding: 0 20px;
+}
+
+.containera .card-container .back .box span{
+    color:#fff;
+    font-size: 15px;
+}
+
+.containera .card-container .back .box .cvv-box{
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    color:#333;
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.containera .card-container .back .box img{
+    margin-top: 30px;
+    height: 30px;
+}
+.rowa{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.atm ,.features{
+    width: 50%;
+}
+.features{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.detail{
+    background:linear-gradient(45deg, blueviolet, deeppink);
+    height: 100px;
+    width: 50%;
+    margin: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 25px;
+   border-radius: 20px;
+}
+form{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.5);
+    margin: 10px;
+    border-radius: 20px;
+    
+}
+form input{
+    width: 50%;
+    height: 50px;
+    margin: 20px;
+    color:#333;
+    border-radius: 5px;
+    text-align: center;
+}
+form label{
+    font-size: 25px;
+}
+form h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.submit{
+    background:linear-gradient(45deg, blueviolet, deeppink);
+    color: #fff;
+    font-size: 20px;
+}
+.material-symbols-outlined{
+    font-size: 30px;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    /* Adjust the background color and opacity as needed */
+/* Ensure the navbar is on top of other elements */
+}
+
