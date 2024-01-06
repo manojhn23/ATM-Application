@@ -39,10 +39,6 @@ An Automated Teller Machine (ATM) application implemented using Java, JSP, HTML,
 
 ## Getting Started
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/ATM-Application.git
 Setup the database:
 
 Create a MySQL database and import the provided SQL script.
